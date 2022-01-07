@@ -2,7 +2,7 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-replicaCount: 2
+replicaCount: 1
 
 image:
   repository: ronbrian/ubuntu
@@ -55,6 +55,22 @@ ingress:
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
+
+postgresql:
+  enabled: true
+  imageTag: "9.6.11"
+  postgresDatabase: "ubuntu"
+  postgresUser: "ubuntu"
+  postgresPassword:
+  postgresConfig:
+    maxConnections: "1500"
+  service:
+    port: 5432
+  persistence:
+    enabled: true
+    size: 2Gi
+  resources: {}
+ 
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious

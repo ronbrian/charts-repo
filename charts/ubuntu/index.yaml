@@ -3,12 +3,12 @@ entries:
   ubuntu:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-01-06T21:27:18.435425+03:00"
+    created: "2022-01-07T10:59:25.887048+03:00"
     description: My custom ubuntu image
-    digest: e8c42deb5d90899c5c7b1b72a6fd5e0658ffa5683b14908060358d3044fea9e1
+    digest: 5cc876b82b9116d0c810232ca5b60a97233e4ac0a888b3b8143ad3b1bdf7e8b6
     name: ubuntu
     type: application
     urls:
-    - https://ronbrian.github.io/charts-repo/ubuntu-0.1.0.tgz
-    version: 0.1.0
-generated: "2022-01-06T21:27:18.432482+03:00"
+    - https://ronbrian.github.io/charts-repo/ubuntu-0.2.0.tgz
+    version: 0.2.0
+generated: "2022-01-07T10:59:25.884429+03:00"
